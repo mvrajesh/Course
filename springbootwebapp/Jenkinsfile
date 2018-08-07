@@ -6,14 +6,6 @@ pipeline {
                 sh 'mvn --file springbootwebapp/pom.xml -DskipTests clean package'
             }
         }
-        stage('sonar-report') {
-            steps {
-                
-        }
-        stage('deploy') {
-            steps {
-                
-            }
-        }
+       
     }
 }
