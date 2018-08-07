@@ -63,7 +63,19 @@
 		</dependency>
 
 	</dependencies>
-	
+
+<distributionManagement>
+        <repository>
+            <id>RajeshRepository</id>
+            <url>http://192.168.43.50:8081/nexus/content/repositories/course1/</url>
+        </repository>
+        <snapshotRepository>
+            <id>RajeshRepository</id>
+            <name>Snapshot Repository</name>
+            <url>http://192.168.43.50:8081/nexus/content/repositories/course/</url>
+        </snapshotRepository>
+</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>

@@ -6,6 +6,11 @@ pipeline {
                 sh 'mvn --file springbootwebapp/pom.xml -DskipTests clean package'
             }
         }
-       
+        stage('deploy') {
+            steps {
+                sh 'mvn --file springbootwebapp/pom.xml -DskipTests deploy'
+            }
+        }
+
     }
 }
