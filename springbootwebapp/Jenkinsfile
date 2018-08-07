@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('compile') {
+            steps {
+                sh 'mvn --file springbootwebapp/pom.xml -DskipTests clean package'
+            }
+        }
+        stage('sonar-report') {
+            steps {
+                
+        }
+        stage('deploy') {
+            steps {
+                
+            }
+        }
+    }
+}
