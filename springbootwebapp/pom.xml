@@ -66,13 +66,13 @@
 
 <distributionManagement>
         <repository>
-            <id>RajeshRepository</id>
-            <url>http://192.168.1.7:8081/nexus/content/repositories/snapshots/</url>
+            <id>course</id>
+            <url>http://192.168.1.7:8081/nexus/content/repositories/course/</url>
         </repository>
         <snapshotRepository>
-            <id>RajeshRepository</id>
+            <id>course</id>
             <name>Snapshot Repository</name>
-            <url>http://192.168.1.7:8081/nexus/content/repositories/releases/</url>
+            <url>http://192.168.1.7:8081/nexus/content/repositories/course/</url>
         </snapshotRepository>
 </distributionManagement>
 
