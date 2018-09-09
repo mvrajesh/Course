@@ -8,7 +8,7 @@ pipeline {
         }
         stage('sonar-report') {
             steps {
-                sh 'mvn --file springbootwebapp/pom.xml sonar:sonar'
+                sh 'mvn --file springbootwebapp/pom.xml jacoco:prepare-agent install jacoco:report  -Daggregate=true jacoco:report-aggregate org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
             }
         }
         stage('deploy') {
